@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body,
+html {
+  user-select: none;
+}
+
+.thin-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: #498d8d;
+  border-radius: 10px;
+}
+.thin-scroll::-webkit-scrollbar-track {
+  background: #18181b;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;     
+  scrollbar-width: none;        
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;                
+}
+iframe {
+  scrollbar-width: none; 
+}
+iframe::-webkit-scrollbar {
+  display: none; 
+}
