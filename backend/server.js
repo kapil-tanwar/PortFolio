@@ -7,7 +7,13 @@ import rateLimit from "express-rate-limit";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://port-folio-weld-zeta.vercel.app/",
+    methods: ["POST", "GET"],
+  })
+);
+
 app.use(express.json());
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -69,5 +75,5 @@ app.post("/api/contact", contactLimiter, async (req, res) => {
 });
 
 app.listen(process.env.PORT, () =>
-  console.log(`Server running on http://localhost:${process.env.PORT}`),
+  console.log(`Server running on port ${process.env.PORT}`),
 );
