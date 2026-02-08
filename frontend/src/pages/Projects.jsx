@@ -6,40 +6,75 @@ import ProjectCard from "../components/ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "AI Fake News Detector",
-      description: "ML powered web app to detect fake news.",
-      githubLink: "https://github.com/yourname/fake-news",
-      liveLink: "https://fake-news.vercel.app",
-      skills: ["React", "Python", "ML", "Flask"],
+      title: "Portfolio Website",
+      description: "A modern personal portfolio to showcase projects, skills, and experience with a clean, responsive design.",
+      githubLink: "https://github.com/kapil-tanwar/PortFolio.git",
+      liveLink: "#",
+      skills: ["React", "Node.js", "MongoDB", "Express.js"],
       image:
-        "https://imgs.search.brave.com/fPIB1mLW-WfMTZ0YuHiS0kAmZjo07l27PBj4g6bmYYI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvZGVt/b24tc2xheWVyLTRr/LXBpY3R1cmVzLW9w/NTZ3amFpdzVkZ3Y0/MXQuanBn",
+        "portfolio.png",
     },
     {
-      title: "Attendance System",
-      description: "Role-based attendance dashboard.",
-      githubLink: "https://github.com/yourname/attendance",
-      liveLink: "https://attendance.vercel.app",
-      skills: ["React", "Node", "MongoDB"],
+      title: "Campus-Check-In ",
+      description: "Check-In – AI-Based Attendance System",
+      githubLink: "#",
+      liveLink: "#",
+      skills: ["React", "Node.js", "MongoDB", "Express.js","TensorFlow.js","Python",],
       image:
-        "https://imgs.search.brave.com/McQldqpQ4y5VQ3ce2VGB4lTm10TEzCOvQQEizKzSC8c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjQx/MjgzNy5qcGc",
+        "/commin-soon.png",
     },
     {
-      title: "AI Fake News Detector",
-      description: "ML powered web app to detect fake news.",
-      githubLink: "https://github.com/yourname/fake-news",
-      liveLink: "https://fake-news.vercel.app",
-      skills: ["React", "Python", "ML", "Flask"],
+      title: "BingeBox ",
+      description: "Visualize spending, monitor savings, and stay in control effortlessly.",
+      githubLink: "https://github.com/kapil-tanwar/BingeBox.git",
+      liveLink: "https://bingebox-lt2n.onrender.com/",
+      skills: ["React", "Node.js", "MongoDB", "Express.js"],
       image:
-        "https://imgs.search.brave.com/fPIB1mLW-WfMTZ0YuHiS0kAmZjo07l27PBj4g6bmYYI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvZGVt/b24tc2xheWVyLTRr/LXBpY3R1cmVzLW9w/NTZ3amFpdzVkZ3Y0/MXQuanBn",
+        "/commin-soon.png",
     },
     {
-      title: "Attendance System",
-      description: "Role-based attendance dashboard.",
-      githubLink: "https://github.com/yourname/attendance",
-      liveLink: "https://attendance.vercel.app",
-      skills: ["React", "Node", "MongoDB"],
+      title: "TrackWise",
+      description: "Visualize spending, monitor savings, and stay in control effortlessly.",
+      githubLink: "https://github.com/kapil-tanwar/TrackWise.git",
+      liveLink: "https://track-wise-three.vercel.app/",
+      skills: ["TypeScript", "Node.js", "MongoDB", "Express.js"],
       image:
-        "https://imgs.search.brave.com/McQldqpQ4y5VQ3ce2VGB4lTm10TEzCOvQQEizKzSC8c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjQx/MjgzNy5qcGc",
+        "/trackwise.png",
+    },
+    {
+      title: "JoinIN ",
+      description: "A real-time chat app for seamless communication and collaboration.",
+      githubLink: "https://github.com/kapil-tanwar/JoinIn.git",
+      liveLink: "https://chat-in-1a0k.onrender.com/",
+      skills: ["React", "Node.js", "MongoDB", "Express.js"],
+      image:
+        "/commin-soon.png",
+    },
+    {
+      title: "fresh-finds",
+      description: "@@@@@@@@@@@",
+      githubLink: "https://github.com/kapil-tanwar/fresh-find.git",
+      liveLink: "https://fresh-find-mocha.vercel.app/",
+      skills: ["React", "Node.js", "MongoDB","Express.js"],
+      image:
+        "/commin-soon.png",
+    },
+    {
+      title: "URL_shortner_mern",
+      description: "A modern web app built to shorten and manage URLs efficiently.",
+      githubLink: "https://github.com/kapil-tanwar/URL_shortner_mern.git",
+      liveLink: "https://url-shortner-mern-1-vjpg.onrender.com/",
+      skills: ["React", "Node.js", "MongoDB", "Express.js"],
+      image:
+        "/url_short.png",
+    },
+    {
+      title: "bubble-clicker",
+      description: "A fast-paced number clicking game to test speed and focus.",
+      githubLink: "https://github.com/kapil-tanwar/bubble-clicker.git",
+      liveLink: "https://kapil-tanwar.github.io/bubble-clicker/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      image: "/bubble_clicker.png",
     },
   ];
   return (
@@ -51,7 +86,7 @@ const Projects = () => {
     >
       <meta charSet="utf-8" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      
+
       <link
         href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@400;500;700&display=swap"
         rel="stylesheet"

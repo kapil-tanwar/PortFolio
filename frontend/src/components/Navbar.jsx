@@ -57,12 +57,12 @@ const Navbar = () => {
           </nav>
           
           <div className="flex items-center gap-3">            
-            <button
+            {/* <button
               onClick={() => setDark(!dark)}
               className="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-[#dfe2e2] dark:border-[#333] hover:border-[#498d8d] transition text-lg"
             >
               {dark ? <FiSun /> : <FiMoon />}
-            </button>
+            </button> */}
             
             <a href="/contacts">
               <button className={buttonBase}>

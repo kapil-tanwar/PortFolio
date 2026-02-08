@@ -9,7 +9,7 @@ const ProjectCard = ({
   image,
 }) => {
   return (
-    <div className="group sm:w-[400px] bg-zinc-900 dark:bg-background-dark rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden transition-all duration-300 hover:shadow-xl">
+    <div className="group sm:w-[400px] bg-zinc-900 dark:bg-background-dark rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden transition-all duration-300 hover:shadow-xl mb-3">
       <div className="relative overflow-hidden">
         <img
           src={image}

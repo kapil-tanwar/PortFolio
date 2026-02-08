@@ -65,7 +65,7 @@ export default function Home() {
                 >
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMOeKuw2RUuDu0sem59_LcvOzksaK0NwJ_BKSELNsYmA98DSQtSjIDfYLVjtVYxysm7O3rckMlkisiBWlHGJc7kBYKOxIe-Z_VvbzlDxA1PcagEQLaVWAx4vLTMcsl-bgoxl-pj9DN1_wExFsy2oOuXIkVTT_opwtpnjRQtYjiF0JtDjhOpLrZm2p58YJA-xe5Act7Kcg6LQGLedBDqLxUOSbVdeh_j5b9mBYyohcguKrLVyAmRJ2_AoyaG8FVAVr5V02hxtgs2Eas"
+                    src="/kapil1.jpeg"
                     alt="profile"
                   />
                 </div>

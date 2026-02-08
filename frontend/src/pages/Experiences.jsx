@@ -94,17 +94,17 @@ const Experiences = () => {
                   <div className="flex flex-wrap justify-between  gap-4 mb-6">
                     <div>
                       <h3 className="text-xl font-bold text-[#131616] dark:text-white flex items-center">
-                        <h2 className="text-lg md:text-xl mr-2">
+                        <h2 className="text-[16.5px] md:text-xl mr-2">
                           Web Developer Intern |{" "}
                         </h2>
                         <a
                           href="#"
-                          className="text-[14px] underline text-gray-400 mt-1"
+                          className="md:text-[14px] text-[14px] underline text-[#6dd0d0] mt-1"
                         >
                           Link
                         </a>
                       </h3>
-                      <p className="text-[#6e7c7c] dark:text-gray-400 font-semibold text-base">
+                      <p className="text-[#6e7c7c] dark:text-gray-400 font-semibold text-base text-[16px] md:text-18px">
                         Elevate Labs
                       </p>
                     </div>
