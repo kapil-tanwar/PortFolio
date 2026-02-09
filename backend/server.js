@@ -9,13 +9,16 @@ const app = express();
 
 
 app.use(express.json());
-
 app.use(
   cors({
-    origin: "https://port-folio-six-pi.vercel.app/",
-    methods: ["POST", "GET"],
+    origin: [
+      "http://localhost:5173",
+      "https://port-folio-six-pi.vercel.app/",
+    ],
+    methods: ["GET", "POST"],
   })
 );
+
 
 
 const resend = new Resend(process.env.RESEND_API_KEY);

@@ -22,7 +22,7 @@ const Contacts = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://portfolio-dejk.onrender.com/api/contact", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
