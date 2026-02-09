@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 import { MdOutlineFileDownload } from "react-icons/md";
 import Footer from "../components/Footer";
 import Message from "../components/Message";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -92,7 +93,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4">
-                  <a href="/projects">
+                  <NavLink to="/projects">
                     <button
                       className="
                       group
@@ -126,7 +127,7 @@ export default function Home() {
                         View Projects
                       </span>
                     </button>
-                  </a>
+                  </NavLink>
 
                   <a href="https://drive.google.com/file/d/1gbS6O4ebeuftEchGKNYWNX_qRRqzFdIM/view?usp=sharing">
                     <button
