@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://port-folio-weld-zeta.vercel.app",
+    origin: "https://port-folio-six-pi.vercel.app/",
     methods: ["POST", "GET"],
   })
 );
