@@ -2,7 +2,9 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { MdOutlineFileDownload } from "react-icons/md";
-import toast from "react-hot-toast"; 
+import toast from "react-hot-toast";
+
+const API_BASE_URL = import.meta.env.VITE_API_URL || "";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +24,7 @@ const Contacts = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+      const res = await fetch(`${API_BASE_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
