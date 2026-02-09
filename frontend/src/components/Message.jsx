@@ -1,4 +1,5 @@
 import { MdOutlineFileDownload } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 function Message({
   heading,
@@ -24,10 +25,30 @@ function Message({
             {para}
           </p>
 
-          <div className="relative z-10 mt-10 flex justify-center gap-4 flex-nowrap">
-
-            <a href={link1}>
-              <button
+          <div className="relative z10 mt-10 flex justify-center gap-4 flex-nowrap">
+            
+            {link1 && link1.startsWith("/") ? (
+              <NavLink to={link1}>
+                <button
+                  className="
+                  group relative overflow-hidden
+                  bg-[#498d8d] text-white
+                  px-5 sm:px-6 py-3 sm:py-4
+                  rounded-xl font-bold
+                  text-sm sm:text-base
+                  transition-all duration-300
+                  hover:shadow-xl
+                  min-w-[140px]
+                "
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#498d8d] to-[#2f6f6f] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
+                  <span className="absolute left-0 top-0 h-full w-1 bg-white/70 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
+                  <span className="relative z-10">{buttonText1}</span>
+                </button>
+              </NavLink>
+            ) : (
+              <a href={link1}>
+                <button
                 className="
                   group relative overflow-hidden
                   bg-[#498d8d] text-white
@@ -43,11 +64,36 @@ function Message({
                 <span className="absolute left-0 top-0 h-full w-1 bg-white/70 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
                 <span className="relative z-10">{buttonText1}</span>
               </button>
-            </a>
+              </a>
+            )}
 
-            {/* Button 2 */}
-            <a href={link2} target={download ? "_blank" : "_self"}>
-              <button
+            
+            {link2 && link2.startsWith("/") && !download ? (
+              <NavLink to={link2}>
+                <button
+                  className="
+                  group relative overflow-hidden
+                  bg-[#498d8d] text-white
+                  px-5 sm:px-6 py-3 sm:py-4
+                  rounded-xl font-bold
+                  text-sm sm:text-base
+                  transition-all duration-300
+                  hover:shadow-xl
+                  min-w-[140px]
+                "
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#498d8d] to-[#2f6f6f] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
+                  <span className="absolute left-0 top-0 h-full w-1 bg-white/70 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
+
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    {download && <MdOutlineFileDownload className="text-lg" />}
+                    {buttonText2}
+                  </span>
+                </button>
+              </NavLink>
+            ) : (
+              <a href={link2} target={download ? "_blank" : "_self"}>
+                <button
                 className="
                   group relative overflow-hidden
                   bg-[#498d8d] text-white
@@ -59,15 +105,16 @@ function Message({
                   min-w-[140px]
                 "
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-[#498d8d] to-[#2f6f6f] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
-                <span className="absolute left-0 top-0 h-full w-1 bg-white/70 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#498d8d] to-[#2f6f6f] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
+                  <span className="absolute left-0 top-0 h-full w-1 bg-white/70 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
 
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  {download && <MdOutlineFileDownload className="text-lg" />}
-                  {buttonText2}
-                </span>
-              </button>
-            </a>
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    {download && <MdOutlineFileDownload className="text-lg" />}
+                    {buttonText2}
+                  </span>
+                </button>
+              </a>
+            )}
           </div>
         </div>
       </div>

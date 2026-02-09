@@ -64,7 +64,7 @@ const Navbar = () => {
               {dark ? <FiSun /> : <FiMoon />}
             </button> */}
             
-            <a href="/contacts">
+            <NavLink to="/contacts">
               <button className={buttonBase}>
                 <span className="absolute inset-0 bg-gradient-to-r from-[#498d8d] to-[#2f6f6f] -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
                 <span className="absolute left-0 top-0 h-full w-1 bg-white/70 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
@@ -77,7 +77,7 @@ const Navbar = () => {
                   →
                 </span>
               </button>
-            </a>
+            </NavLink>
             
             <button
               onClick={() => setOpen(true)}
