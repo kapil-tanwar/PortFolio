@@ -110,11 +110,15 @@ const Projects = () => {
         <main className="flex-1 px-6 md:px-20 py-12">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
-              <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase rounded-full mb-4">
-                Portfolio 2025
+              <div
+                className="inline-flex items-center 
+                bg-[#498d8d]/10 text-[#498d8d]
+                px-3 py-1 rounded-full text-xs font-bold mb-4"
+              >
+                ● PROJECTS
               </div>
-              <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
-                Featured Projects
+              <h1 className="flex md:gap-5 gap-2 flex-col md:flex-row text-5xl md:text-7xl font-black mb-6 tracking-tighter">
+                Featured <p className="text-[#498d8d]">Projects</p>
               </h1>
               <p className="text-[#6e7c7c] dark:text-gray-400 text-xl max-w-2xl leading-relaxed">
                 A curation of architectural solutions where performance meets
@@ -136,7 +140,7 @@ const Projects = () => {
               ))}
             </div>
 
-            <div className="mt-20 border-t-1 border-white/40 w-full text-[12px] md:text-lg"></div>
+            <div className="mt-20 border-t-1 border-gray-500 dark:border-white/40 w-full text-[12px] md:text-lg"></div>
             <Message
               heading="Interested in collaborating?"
               para="I'm currently available for freelance projects and full-time opportunities."

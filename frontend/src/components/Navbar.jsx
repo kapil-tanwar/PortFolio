@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-[#dfe2e2] dark:border-[#333] bg-[#f7f7f7]/80 dark:bg-[#1a1a1a]/80 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b  border-gray-400/80 dark:border-[#333] bg-[#498d8d]/25 dark:bg-[#1a1a1a]/80 backdrop-blur">
         <div className="max-w-[1200px] mx-auto px-4 h-16 flex items-center justify-between">          
           <NavLink to="/" className="flex items-center gap-2">
             <div className="size-8 bg-[#498d8d] rounded-lg flex items-center justify-center text-white font-bold">
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">            
             <button
               onClick={() => setDark(!dark)}
-              className="p-2 rounded-lg bg-white dark:bg-zinc-800 border border-[#dfe2e2] dark:border-[#333] hover:border-[#498d8d] transition text-lg"
+              className="p-2 rounded-lg bg-[#498d8d] text-white/70 dark:bg-zinc-800  dark:border-[#333] hover:border-[#498d8d] transition text-lg"
             >
               {dark ? <FiSun /> : <FiMoon />}
             </button>
@@ -97,13 +97,13 @@ const Navbar = () => {
       />
       
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-zinc-900 shadow-xl z-50 transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-64 bg-[#a7b5b5] dark:bg-zinc-900 shadow-xl z-50 transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between p-4 border-b">
+        <div className="flex items-center justify-between p-4 border-b border-gray-600/80">
           <span className="font-bold text-[#498d8d]">Menu</span>
-          <button onClick={() => setOpen(false)} className="text-xl">
+          <button onClick={() => setOpen(false)} className="text-xl text-black/70">
             <FiX />
           </button>
         </div>

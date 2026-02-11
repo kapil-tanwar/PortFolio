@@ -35,11 +35,15 @@ const About = () => {
         <main className="flex-1 max-w-[1200px] mx-auto w-full px-6 md:px-20 lg:px-10 py-12">
           <div className="mb-16">
             <div className="flex flex-col gap-4">
-              <span className="text-primary font-bold tracking-widest text-xs uppercase">
-                About Me
-              </span>
+              <div
+                className="inline-flex items-center gap-2 
+                bg-[#498d8d]/10 text-[#498d8d]
+                px-3 py-1 rounded-full text-xs font-bold mb-3 w-fit"
+              >
+                ● ABOUT ME
+              </div>
               <h1 className="text-5xl md:text-6xl font-black leading-tight tracking-tighter max-w-3xl">
-                Architecting Digital Solutions with Precision
+                Architecting Digital Solutions with <p className="text-[#498d8d]">Precision</p>
               </h1>
               <p className="text-[#6e7c7c] dark:text-gray-400 text-lg md:text-xl font-normal max-w-2xl leading-relaxed">
                 A deep dive into my professional journey, academic background,
@@ -52,8 +56,8 @@ const About = () => {
             <div className="lg:col-span-7">
               <div className="flex flex-col gap-8">
                 <div>
-                  <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary">
+                  <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 text-[#498d8d] dark:text-white">
+                    <span className="material-symbols-outlined text-primary ">
                       person_search
                     </span>
                     Professional Summary
@@ -74,7 +78,7 @@ const About = () => {
                       challenge with an architectural mindset—prioritizing
                       long-term maintainability over quick fixes.
                     </p>
-                    <p className="border-l-4 border-primary pl-6 py-2 italic font-medium text-primary bg-primary/5 rounded-r-lg">
+                    <p className="border-l-4 border-primary pl-6 py-2 italic font-medium text-primary bg-primary/5 rounded-r-lg text-[#4a8080] dark:text-white">
                       "Code is not just instructions for machines; it's a form
                       of communication between developers and a service to
                       users."
@@ -92,7 +96,7 @@ const About = () => {
 
             <div className="lg:col-span-5">
               <div className="sticky top-28">
-                <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
+                <h2 className="text-2xl font-bold mb-8 flex items-center gap-2 text-[#498d8d] dark:text-white">
                   <span className="material-symbols-outlined text-primary">
                     school
                   </span>
@@ -149,7 +153,7 @@ const About = () => {
 
           <div className="mb-24">
             <div className="flex flex-col gap-2 mb-10">
-              <h2 className="text-3xl font-bold tracking-tight">
+              <h2 className="text-3xl font-bold tracking-tight text-[#498d8d] dark:text-white">
                 Beyond the Code
               </h2>
               <p className="text-[#6e7c7c] dark:text-gray-400">
@@ -213,7 +217,7 @@ const About = () => {
           </div>
 
           <div className="relative items-center justify-center flex-col flex">
-            <div className="border-[0.5px] border-white/60 w-[90%]"></div>
+            <div className="border-[0.7px] dark:border-white/60 border-[#498d8d] w-[90%]"></div>
             <Message
               heading="Interested in working together?"
               para="I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision."

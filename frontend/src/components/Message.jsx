@@ -11,17 +11,17 @@ function Message({
   link2,
 }) {
   return (
-    <section className="w-full pt-12 px-4">
+    <section className="w-full pt-12 md:px-4">
       <div className="max-w-[1200px] mx-auto ">
-        <div className="relative overflow-hidden rounded-[2rem] bg-zinc-900 text-white px-6 sm:px-10 md:px-16 lg:px-24 py-14 text-center lg:h-[350px]">
+        <div className="relative overflow-hidden rounded-[2rem] bg-[#498d8d]/29 dark:bg-zinc-900 text-gray-600/70  font-semibold px-6 sm:px-10 md:px-16 lg:px-24 py-14 text-center lg:h-[350px]">
           <div className="absolute top-0 right-0 w-40 h-40 bg-[#498d8d]/20 blur-[90px]" />
           <div className="absolute bottom-0 left-0 w-40 h-40 bg-[#498d8d]/10 blur-[90px]" />
 
-          <h2 className="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black">
+          <h2 className="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl dark:text-gray-400">
             {heading}
           </h2>
 
-          <p className="relative z-10 mt-4 text-sm sm:text-base md:text-lg text-zinc-400 max-w-2xl mx-auto">
+          <p className="relative z-10 mt-4 text-sm sm:text-base md:text-lg dark:text-zinc-400 max-w-2xl mx-auto text-black/30">
             {para}
           </p>
 

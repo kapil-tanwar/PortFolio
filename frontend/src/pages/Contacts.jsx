@@ -82,15 +82,22 @@ const Contacts = () => {
   `;
 
   const inputClass =
-    "input-focus-teal w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-transparent text-sm transition-all";
+    "input-focus-teal w-full px-4 py-3 rounded-lg border border-gray-600/60 dark:border-gray-700 bg-transparent text-sm transition-all  dark:text-gray-200 ";
 
   return (
-    <div className="min-h-screen bg-[#f7f7f7] dark:bg-[#1a1a1a] text-[#131616] dark:text-white">
+    <div className="min-h-screen  dark:bg-[#1a1a1a] text-[#131616] dark:text-white">
       <Navbar />
 
       <main className="mx-auto max-w-[1200px] px-6 py-12">
         <div className="mb-12">
-          <h1 className="text-5xl font-black mb-4">Resume & Contact</h1>
+          <div
+            className="inline-flex items-center gap-2 
+            bg-[#498d8d]/10 text-[#498d8d]
+            px-3 py-1 rounded-full text-xs font-bold"
+          >
+            ● CONTACTS
+          </div>
+          <h1 className="text-5xl font-black mb-4 flex flex-col md:flex-row gap-3">Resume <p className="text-[#498d8d]">& Contact</p></h1>
           <p className="text-lg text-gray-500 max-w-2xl">
             I'm currently looking for new challenges as a Full Stack Developer.
             Feel free to reach out.
@@ -142,7 +149,7 @@ const Contacts = () => {
 
             <form
               onSubmit={handleSubmit}
-              className="space-y-5 bg-white dark:bg-[#252525] p-8 rounded-xl border dark:border-[#333]"
+              className="space-y-5  dark:bg-[#252525] p-8 rounded-xl border dark:border-[#333]"
             >
               <div className="grid md:grid-cols-2 gap-5">
                 <input
@@ -194,7 +201,7 @@ const Contacts = () => {
 
               <textarea
                 rows={5}
-                className={`${inputClass} resize-none`}
+                className="input-focus-teal w-full px-4 py-3 rounded-lg border border-gray-600/60 dark:border-gray-700 bg-transparent text-sm transition-all placeholder-gray-600 dark:placeholder-gray-500"
                 placeholder="Tell me about your project..."
                 name="message"
                 value={formData.message}

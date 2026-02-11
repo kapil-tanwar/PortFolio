@@ -33,9 +33,16 @@ const Experiences = () => {
         <Navbar />
         <main className="flex-1 max-w-[1200px] mx-auto w-full px-4 md:px-10 py-12">
           <div className="mb-16">
-            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4">
+                <div
+                className="inline-flex items-center gap-2 
+                bg-[#498d8d]/10 text-[#498d8d]
+                px-3 py-1 rounded-full text-xs font-bold mb-3 w-fit"
+              >
+                ● EXPERIENCE
+              </div>
               <h1 className="text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] text-[#131616] dark:text-white">
-                Professional <span className="text-primary">Experience</span>
+                Professional <span className="text-primary text-[#498d8d]">Experience</span>
               </h1>
               <p className="text-[#6e7c7c] dark:text-gray-400 text-lg max-w-2xl">
                 A decade of building scalable web architectures, leading
@@ -89,8 +96,8 @@ const Experiences = () => {
                 className="relative pl-8 border-l-2 border-gray-200 dark:border-gray-800 mb-12"
                 id={2025}
               >
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-700 border-4 border-white dark:border-background-dark" />
-                <div className="experience-card bg-zinc-900/90 dark:bg-background-dark p-8 rounded-xl border border-gray-200 dark:border-gray-800 transition-all duration-300">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#498d8d]/29 dark:bg-gray-700 border-4 border-[#498d8d] dark:border-background-dark" />
+                <div className="experience-card bg-[#498d8d]/29 dark:bg-zinc-900/90  p-8 rounded-xl border border-gray-200 dark:border-gray-800 transition-all duration-300">
                   <div className="flex flex-wrap justify-between  gap-4 mb-6">
                     <div>
                       <h3 className="text-xl font-bold text-[#131616] dark:text-white flex items-center">
@@ -99,7 +106,7 @@ const Experiences = () => {
                         </h2>
                         <a
                           href="#"
-                          className="md:text-[14px] text-[14px] underline text-[#6dd0d0] mt-1"
+                          className="md:text-[14px] text-[14px] underline text-[#5d9f9f] dark:text-[#6dd0d0] mt-1"
                         >
                           Link
                         </a>

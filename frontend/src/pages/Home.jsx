@@ -1,8 +1,3 @@
-import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FiSun, FiMoon } from "react-icons/fi";
-import { FiTerminal } from "react-icons/fi";
 import { MdOutlineTerminal } from "react-icons/md";
 import { MdWorkOutline } from "react-icons/md";
 import Navbar from "../components/Navbar";
@@ -181,13 +176,13 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pb-24">
+          <section className="max-w-[1200px] mx-auto px-2 sm:px-6 pb-24">
             <h2 className="text-3xl sm:text-4xl font-bold mb-10">
               Architecting the digital future
             </h2>
 
             <div className="flex flex-col md:flex-row gap-6 mb-6">
-              <div className="w-full md:w-2/3 bg-zinc-900 border border-white/10 p-6 rounded-2xl">
+              <div className="w-full md:w-2/3 dark:bg-zinc-900 border dark:border-white/10 border-gray-200 dark:border-gray-800 shadow-sm p-6 rounded-2xl">
                 <div className="flex justify-between mb-4">
                   <h3 className="font-bold">Core Technologies</h3>
                   <span className="text-[#498d8d] text-sm">
@@ -195,7 +190,7 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="thin-scroll flex flex-wrap gap-2 max-h-[120px] overflow-y-auto pr-2">
+                <div className="p-1 thin-scroll flex flex-wrap gap-2 max-h-[120px] overflow-y-auto pr-2">
                   {[
                     "C++",
                     "Java",
@@ -240,7 +235,7 @@ export default function Home() {
                   ].map((skill) => (
                     <span
                       key={skill}
-                      className="bg-zinc-800 px-3 py-1 rounded-md text-xs"
+                      className="bg-gray-400/25 dark:bg-zinc-800 px-3 py-1 rounded-md text-xs"
                     >
                       {skill}
                     </span>
@@ -263,19 +258,23 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="w-full md:w-1/3 bg-zinc-900 border border-white/10 p-6 rounded-2xl">
-                <p className="text-[#498d8d] text-xs uppercase mb-2">
+            <div className="col-span-12 lg:col-span-4 experience-card bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm w-full md:w-1/3">
+              <div className="flex mb-2 flex-col w-full md:w-1/3">
+                <p className="text-[#498d8d] text-lg uppercase mb-2 font-bold">
                   Architecture
                 </p>
+                <h3 className="font-bold w-[300px]">My Philosophy</h3>
+              </div>
 
-                <h3 className="font-bold mb-2">My Philosophy</h3>
-
+              <div className=" gap-3">
+                
                 <p className="text-sm text-zinc-400 leading-relaxed">
                   I believe in clean code that's easy to read and systems that
                   are built to scale. Aesthetics should never sacrifice
                   performance.
                 </p>
               </div>
+          </div>
 
               <div className="w-full md:w-2/3 relative rounded-2xl overflow-hidden h-[180px] sm:h-[220px]">
                 <img
@@ -293,8 +292,8 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="relative items-center justify-center flex-col flex">
-            <div className="border-[0.5px] border-white/60 w-[90%]"></div>
+          <div className="relative items-center justify-center flex-col flex px-7 mb-7">
+            <div className="border-[0.5px] border-gray-400/50 dark:border-white/60 w-[90%]"></div>
             <Message
               heading="Ready to build something extraordinary?"
               para="Let's collaborate on your next project. Whether it's a complex web app or a high-performance landing page, I'm here to bring it to life."
