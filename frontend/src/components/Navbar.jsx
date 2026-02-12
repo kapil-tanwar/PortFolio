@@ -3,12 +3,23 @@ import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return localStorage.getItem("theme") === "dark";
+  });
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
+
+  const toggleDark = () => {
+    setDark((prev) => {
+      const next = !prev;
+      localStorage.setItem("theme", next ? "dark" : "light");
+      return next;
+    });
+  };
 
   const links = [
     { name: "Home", link: "/" },
@@ -58,7 +69,7 @@ const Navbar = () => {
           
           <div className="flex items-center gap-3">            
             <button
-              onClick={() => setDark(!dark)}
+              onClick={toggleDark}
               className="p-2 rounded-lg bg-[#498d8d] text-white/70 dark:bg-zinc-800  dark:border-[#333] hover:border-[#498d8d] transition text-lg"
             >
               {dark ? <FiSun /> : <FiMoon />}
