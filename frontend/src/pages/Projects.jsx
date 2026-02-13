@@ -7,66 +7,72 @@ const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
-      description: "A modern personal portfolio to showcase projects, skills, and experience with a clean, responsive design.",
+      description:
+        "A modern personal portfolio to showcase projects, skills, and experience with a clean, responsive design.",
       githubLink: "https://github.com/kapil-tanwar/PortFolio.git",
       liveLink: "https://port-folio-mqvn.vercel.app/",
       skills: ["React", "Node.js", "MongoDB", "Express.js"],
-      image:
-        "portfolio.png",
+      image: "portfolio.png",
     },
     {
       title: "Campus-Check-In ",
       description: "Check-In – AI-Based Attendance System",
       githubLink: "https://port-folio-mqvn.vercel.app/",
       liveLink: "https://port-folio-mqvn.vercel.app/",
-      skills: ["React", "Node.js", "MongoDB", "Express.js","TensorFlow.js","Python",],
-      image:
-        "/commin-soon.png",
-    },
-    {
-      title: "BingeBox ",
-      description: "Visualize spending, monitor savings, and stay in control effortlessly.",
-      githubLink: "https://github.com/kapil-tanwar/BingeBox.git",
-      liveLink: "https://bingebox-lt2n.onrender.com/",
-      skills: ["React", "Node.js", "MongoDB", "Express.js"],
-      image:
-        "/commin-soon.png",
+      skills: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "TensorFlow.js",
+        "Python",
+      ],
+      image: "/campus.png",
     },
     {
       title: "TrackWise",
-      description: "Visualize spending, monitor savings, and stay in control effortlessly.",
+      description:
+        "Visualize spending, monitor savings, and stay in control effortlessly.",
       githubLink: "https://github.com/kapil-tanwar/TrackWise.git",
       liveLink: "https://track-wise-three.vercel.app/",
       skills: ["TypeScript", "Node.js", "MongoDB", "Express.js"],
-      image:
-        "/trackwise.png",
+      image: "/trackwise.png",
+    },
+    {
+      title: "BingeBox ",
+      description:
+        "Visualize spending, monitor savings, and stay in control effortlessly.",
+      githubLink: "https://github.com/kapil-tanwar/BingeBox.git",
+      liveLink: "https://bingebox-lt2n.onrender.com/",
+      skills: ["React", "Node.js", "MongoDB", "Express.js"],
+      image: "/bingebox.png",
     },
     {
       title: "JoinIN ",
-      description: "A real-time chat app for seamless communication and collaboration.",
+      description:
+        "A real-time chat app for seamless communication and collaboration.",
       githubLink: "https://github.com/kapil-tanwar/JoinIn.git",
       liveLink: "https://chat-in-1a0k.onrender.com/",
       skills: ["React", "Node.js", "MongoDB", "Express.js"],
-      image:
-        "chat.png",
+      image: "chat.png",
     },
     {
       title: "fresh-finds",
-      description: "Fresh Find is a smart farmer marketplace that uses AI to assess produce freshness.",
+      description:
+        "Fresh Find is a smart farmer marketplace that uses AI to assess produce freshness.",
       githubLink: "https://github.com/kapil-tanwar/fresh-find.git",
       liveLink: "https://fresh-finds-beige.vercel.app/",
-      skills: ["React", "Node.js", "MongoDB","Express.js"],
-      image:
-        "/fresh.png",
+      skills: ["React", "Node.js", "MongoDB", "Express.js"],
+      image: "/fresh.png",
     },
     {
       title: "URL_shortner_mern",
-      description: "A modern web app built to shorten and manage URLs efficiently.",
+      description:
+        "A modern web app built to shorten and manage URLs efficiently.",
       githubLink: "https://github.com/kapil-tanwar/URL_shortner_mern.git",
       liveLink: "https://url-shortner-mern-1-vjpg.onrender.com/",
       skills: ["React", "Node.js", "MongoDB", "Express.js"],
-      image:
-        "/url_short.png",
+      image: "/url_short.png",
     },
     {
       title: "bubble-clicker",
