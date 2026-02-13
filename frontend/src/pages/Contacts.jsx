@@ -137,12 +137,7 @@ const Contacts = () => {
             </div>
 
             <div className="relative h-[75vh] rounded-xl overflow-hidden border dark:border-[#333] bg-[#111]">
-              <iframe
-                src="/resume.pdf"
-                title="Resume"
-                className="w-full h-full blur-[2px] opacity-80 pointer-events-none hidden md:block"
-              />
-              <img src="templet.png" alt="img" className="block blur-[4px] md:hidden w-full h-full object-contain object-center"/>
+              <img src="templet.jpeg" alt="img" className="block blur-[4px] w-full h-full object-contain object-center"/>
 
   
               <NavLink to="/resume.pdf " target="_blank" className="absolute inset-0 flex items-center justify-center bg-black/30" >
