@@ -9,7 +9,7 @@ const Projects = () => {
       title: "Portfolio Website",
       description: "A modern personal portfolio to showcase projects, skills, and experience with a clean, responsive design.",
       githubLink: "https://github.com/kapil-tanwar/PortFolio.git",
-      liveLink: "#",
+      liveLink: "https://port-folio-mqvn.vercel.app/",
       skills: ["React", "Node.js", "MongoDB", "Express.js"],
       image:
         "portfolio.png",
@@ -17,8 +17,8 @@ const Projects = () => {
     {
       title: "Campus-Check-In ",
       description: "Check-In – AI-Based Attendance System",
-      githubLink: "#",
-      liveLink: "#",
+      githubLink: "https://port-folio-mqvn.vercel.app/",
+      liveLink: "https://port-folio-mqvn.vercel.app/",
       skills: ["React", "Node.js", "MongoDB", "Express.js","TensorFlow.js","Python",],
       image:
         "/commin-soon.png",
@@ -48,16 +48,16 @@ const Projects = () => {
       liveLink: "https://chat-in-1a0k.onrender.com/",
       skills: ["React", "Node.js", "MongoDB", "Express.js"],
       image:
-        "/commin-soon.png",
+        "chat.png",
     },
     {
       title: "fresh-finds",
-      description: "@@@@@@@@@@@",
+      description: "Fresh Find is a smart farmer marketplace that uses AI to assess produce freshness.",
       githubLink: "https://github.com/kapil-tanwar/fresh-find.git",
-      liveLink: "https://fresh-find-mocha.vercel.app/",
+      liveLink: "https://fresh-finds-beige.vercel.app/",
       skills: ["React", "Node.js", "MongoDB","Express.js"],
       image:
-        "/commin-soon.png",
+        "/fresh.png",
     },
     {
       title: "URL_shortner_mern",
@@ -79,22 +79,14 @@ const Projects = () => {
   ];
   return (
     <div
-      className='className="grid-bg min-h-screen 
-      bg-[#f7f7f7] dark:bg-[#1a1a1a] 
+      className="grid-bg min-h-screen 
+      bg-[#f0f4f4] dark:bg-[#1a1a1a] 
       text-[#131616] dark:text-white 
-      transition-colors duration-300"'
+      transition-colors duration-300"
     >
       <meta charSet="utf-8" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-      <link
-        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@400;500;700&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet"
-      />
       <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet"
@@ -126,7 +118,7 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 sm:gap-2">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((project, index) => (
                 <ProjectCard
                   key={index}
@@ -140,11 +132,11 @@ const Projects = () => {
               ))}
             </div>
 
-            <div className="mt-20 border-t-1 border-gray-500 dark:border-white/40 w-full text-[12px] md:text-lg"></div>
+            <div className="mt-20 border-t border-gray-500 dark:border-white/40 w-full text-[12px] md:text-lg"></div>
             <Message
               heading="Interested in collaborating?"
               para="I'm currently available for freelance projects and full-time opportunities."
-              buttonText1="Start a Project"
+              buttonText1="Start Project"
               buttonText2="Resume"
               download={true}
               link1="/contacts"

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main
       className="grid-bg min-h-screen 
-      bg-[#f7f7f7] dark:bg-[#1a1a1a] 
+      bg-[#f0f4f4] dark:bg-[#1a1a1a] 
       text-[#131616] dark:text-white 
       transition-colors duration-300"
     >
@@ -118,8 +118,14 @@ export default function Home() {
                         "
                       />
 
-                      <span className="relative z-10 md:text-[15px] text-sm">
+                      <span className="relative z-10 md:text-[15px] text-sm md:block hidden">
                         View Projects
+                      </span>
+                      <span className="relative z-10 md:text-[15px] text-sm md:hidden block">
+                        Projects
+                      </span>
+                      <span className=" ml-2 md:hidden font-bold">
+                        →
                       </span>
                     </button>
                   </NavLink>
@@ -297,7 +303,7 @@ export default function Home() {
             <Message
               heading="Ready to build something extraordinary?"
               para="Let's collaborate on your next project. Whether it's a complex web app or a high-performance landing page, I'm here to bring it to life."
-              buttonText1="Start a Project"
+              buttonText1="Start Project"
               buttonText2="Say Hello"
               link1="/contacts"
               link2="/contacts"

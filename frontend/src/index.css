@@ -4,6 +4,19 @@
 body,
 html {
   user-select: none;
+  font-family: 'Epilogue', sans-serif;
+}
+
+.grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(73, 141, 141, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(73, 141, 141, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.dark .grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 }
 
 .thin-scroll::-webkit-scrollbar {

@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">            
             <button
               onClick={toggleDark}
-              className="p-2 rounded-lg bg-[#498d8d] text-white/70 dark:bg-zinc-800  dark:border-[#333] hover:border-[#498d8d] transition text-lg"
+              className="p-2 rounded-lg bg-[#498d8d] text-white/70 dark:bg-zinc-800  dark:border-[#333] hover:border-[#498d8d] transition text-lg cursor-pointer"
             >
               {dark ? <FiSun /> : <FiMoon />}
             </button>
@@ -114,7 +114,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-600/80">
           <span className="font-bold text-[#498d8d]">Menu</span>
-          <button onClick={() => setOpen(false)} className="text-xl text-black/70">
+          <button onClick={() => setOpen(false)} className="text-xl text-black/70 dark:text-gray-300">
             <FiX />
           </button>
         </div>

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { MdOutlineFileDownload } from "react-icons/md";
 import toast from "react-hot-toast";
+import { NavLink } from "react-router-dom";
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || "";
 
@@ -80,12 +81,22 @@ const Contacts = () => {
     transition-transform duration-300
     origin-top
   `;
+  const buttonBase = `
+    group relative overflow-hidden
+    bg-[#498d8d] text-white
+    px-6 py-2 rounded-lg
+    text-sm font-bold
+    transition-all duration-300
+    hover:shadow-lg
+    flex items-center justify-center
+    cursor-pointer
+  `;
 
   const inputClass =
     "input-focus-teal w-full px-4 py-3 rounded-lg border border-gray-600/60 dark:border-gray-700 bg-transparent text-sm transition-all  dark:text-gray-200 ";
 
   return (
-    <div className="min-h-screen  dark:bg-[#1a1a1a] text-[#131616] dark:text-white">
+    <div className="grid-bg min-h-screen bg-[#f0f4f4] dark:bg-[#1a1a1a] text-[#131616] dark:text-white transition-colors duration-300">
       <Navbar />
 
       <main className="mx-auto max-w-[1200px] px-6 py-12">
@@ -118,7 +129,8 @@ const Contacts = () => {
                   <span className={hoverBg} />
                   <span className={leftBar} />
                   <MdOutlineFileDownload className="relative z-10 text-xl" />
-                  <span className="relative z-10">Download Resume</span>
+                  <span className="relative z-10 md:block hidden">Download Resume</span>
+                  <span className="relative z-10 md:hidden block">Resume</span>
                 </button>
               </a>
             </div>
@@ -130,15 +142,21 @@ const Contacts = () => {
                 className="w-full h-full blur-[2px] opacity-80 pointer-events-none"
               />
 
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  className="bg-[#498d8d] text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition"
-                >
-                  View Full Resume
-                </a>
-              </div>
+  
+              <NavLink to="/resume.pdf " target="_blank" className="absolute inset-0 flex items-center justify-center bg-black/30" >
+                <button className={buttonBase}>
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#498d8d] to-[#2f6f6f] -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                  <span className="absolute left-0 top-0 h-full w-1 bg-white/70 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
+
+                  <span className="relative z-10 mr-3 group-hover:-translate-x-2 transition-transform duration-300 text-lg">
+                    View Full Resume
+                  </span>
+
+                  <span className="absolute right-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 z-10 text-xl font-bold">
+                    →
+                  </span>
+                </button>
+            </NavLink>
             </div>
           </div>
 

@@ -52,7 +52,7 @@ function Message({
                 className="
                   group relative overflow-hidden
                   bg-[#498d8d] text-white
-                  px-5 sm:px-6 py-3 sm:py-4
+                   sm:px-6 py-3 sm:py-4
                   rounded-xl font-bold
                   text-sm sm:text-base
                   transition-all duration-300

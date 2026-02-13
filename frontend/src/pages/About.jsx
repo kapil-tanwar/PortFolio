@@ -6,20 +6,12 @@ const About = () => {
   return (
     <div
       className="grid-bg min-h-screen 
-      bg-[#f7f7f7] dark:bg-[#1a1a1a] 
+      bg-[#f0f4f4] dark:bg-[#1a1a1a] 
       text-[#131616] dark:text-white 
       transition-colors duration-300"
     >
       <meta charSet="utf-8" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet"
-      />
       <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet"
@@ -27,7 +19,7 @@ const About = () => {
       <style
         dangerouslySetInnerHTML={{
           __html:
-            "\n        body {\n            font-family: 'Epilogue', sans-serif;\n        }\n        .timeline-container::before {\n            content: '';\n            position: absolute;\n            left: 20px;\n            top: 0;\n            bottom: 0;\n            width: 2px;\n            background: #dfe2e2;\n        }\n        .dark .timeline-container::before {\n            background: #333;\n        }\n    ",
+            ".timeline-container::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: #dfe2e2; } .dark .timeline-container::before { background: #333; }",
         }}
       />
       <div className="relative flex min-h-screen w-full flex-col">

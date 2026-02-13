@@ -1,39 +1,12 @@
-import {
-  FaCode,
-  FaLayerGroup,
-  FaDatabase,
-  FaTools,
-  FaBook,
-  FaUsers,
-  FaProjectDiagram,
-  FaBrain,
-  FaCuttlefish,
-  FaJava,
-  FaPython,
-  FaJs,
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNodeJs,
-  FaDocker,
-  FaGithub,
-  FaCloud,
-  FaLaptopCode,
-  FaKey,
+import {FaCode,FaLayerGroup,FaDatabase,FaTools,
+  FaBook,FaUsers,FaProjectDiagram,FaBrain,FaCuttlefish,
+  FaJava,FaPython,FaJs,FaHtml5,FaCss3Alt,FaReact,FaNodeJs,
+  FaDocker,FaGithub,FaLaptopCode,FaKey,
 } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiExpress,
-  SiFlask,
-  SiFastapi,
-  SiRedux,
-  SiMui,
-  SiGooglecloud,
-  SiJupyter,
-  SiPostman,
-  SiIntellijidea,
-  SiEclipseide,
+import {SiExpress,SiFlask,SiNextdotjs,SiFastapi,
+  SiRedux,SiMui,SiGooglecloud,SiJupyter,SiPostman,
+  SiIntellijidea,SiEclipseide,
 } from "react-icons/si";
 
 import Navbar from "../components/Navbar";
@@ -41,7 +14,7 @@ import Footer from "../components/Footer";
 
 const Skills = () => {
   return (
-    <div className="min-h-screen bg-[#f5f7f8] dark:bg-[#1a1a1a] text-[#131616] dark:text-white">
+    <div className="grid-bg min-h-screen bg-[#f0f4f4] dark:bg-[#1a1a1a] text-[#131616] dark:text-white transition-colors duration-300">
       <Navbar />
 
       <main className="max-w-[1440px] mx-auto px-4 md:px-20 lg:px-40 py-14">        
@@ -64,7 +37,7 @@ const Skills = () => {
         </div>
         
         <div className="grid grid-cols-12 gap-6">
-          {/* Main skills card (Languages + Frameworks) */}
+          
           <div className="experience-card col-span-12 lg:col-span-8 bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
             <div className="grid md:grid-cols-2 gap-10">              
               <div>
@@ -122,7 +95,7 @@ const Skills = () => {
         </div>
         
         <div className="grid grid-cols-12 gap-6 mt-6">
-          {/* Libraries */}
+          
           <div className="col-span-12 lg:col-span-4 experience-card bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
             <div className="flex items-center gap-3 mb-6">
               <FaBook className="text-primary text-xl text-[#498d8d]" />
@@ -137,7 +110,7 @@ const Skills = () => {
             </div>
           </div>
           
-          {/* Developer tools */}
+          
           <div className="col-span-12 lg:col-span-8 experience-card bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
             <div className="flex items-center gap-3 mb-6">
               <FaTools className="text-primary text-xl text-[#498d8d]" />
@@ -160,7 +133,7 @@ const Skills = () => {
         </div>
         
         <div className="grid grid-cols-12 gap-6 mt-6">
-          {/* Core competencies */}
+          
           <div className="col-span-12 lg:col-span-6 experience-card bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
             <div className="flex items-center gap-3 mb-6">
               <FaProjectDiagram className="text-primary text-xl text-[#498d8d]" />
@@ -177,7 +150,7 @@ const Skills = () => {
             </div>
           </div>
           
-          {/* Soft skills */}
+          
           <div className="col-span-12 lg:col-span-6 experience-card bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm">
             <div className="flex items-center gap-3 mb-6">
               <FaUsers className="text-primary text-xl text-[#498d8d]" />

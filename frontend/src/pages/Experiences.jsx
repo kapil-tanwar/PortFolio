@@ -4,21 +4,13 @@ import Footer from "../components/Footer";
 const Experiences = () => {
   return (
     <div
-      className='className="grid-bg min-h-screen 
-      bg-[#f7f7f7] dark:bg-[#1a1a1a] 
+      className="grid-bg min-h-screen 
+      bg-[#f0f4f4] dark:bg-[#1a1a1a] 
       text-[#131616] dark:text-white 
-      transition-colors duration-300"'
+      transition-colors duration-300"
     >
       <meta charSet="utf-8" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet"
-      />
       <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet"
@@ -26,7 +18,7 @@ const Experiences = () => {
       <style
         dangerouslySetInnerHTML={{
           __html:
-            "\n        .material-symbols-outlined {\n            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;\n        }\n        body {\n            font-family: 'Epilogue', sans-serif;\n        }\n        .experience-card:hover {\n            box-shadow: 0 10px 30px -10px rgba(73, 141, 141, 0.1);\n            border-color: #498d8d40;\n        }\n    ",
+            ".material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; } .experience-card:hover { box-shadow: 0 10px 30px -10px rgba(73, 141, 141, 0.1); border-color: #498d8d40; }",
         }}
       />
       <div className="layout-container flex flex-col min-h-screen">
@@ -105,7 +97,7 @@ const Experiences = () => {
                           Web Developer Intern |{" "}
                         </h2>
                         <a
-                          href="#"
+                          href="https://drive.google.com/file/d/1UspebzwYBvPD5sZk4MAdPu5MwbWvPfdJ/view?usp=sharing"
                           className="md:text-[14px] text-[14px] underline text-[#5d9f9f] dark:text-[#6dd0d0] mt-1"
                         >
                           Link
