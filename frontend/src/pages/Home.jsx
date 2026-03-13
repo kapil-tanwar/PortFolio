@@ -76,10 +76,9 @@ export default function Home() {
                   ● AVAILABLE FOR NEW PROJECTS
                 </div>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black">
+                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black ">
                   Kapil Tanwar — <br />
-                  <span className="text-[#498d8d">Software</span>{" "}
-                  Developer
+                  <span className="text-[#498d8d]">Software</span> Developer
                 </h1>
 
                 <p className="text-[#6e7c7c] dark:text-zinc-400 max-w-xl">
@@ -125,7 +124,9 @@ export default function Home() {
                       <span className="relative z-10 md:text-[15px] text-sm md:hidden block">
                         Projects
                       </span>
-                      <span className=" ml-2 md:hidden font-bold">→</span>
+                      <span className=" ml-2 md:hidden font-bold">
+                        →
+                      </span>
                     </button>
                   </NavLink>
 
@@ -263,22 +264,23 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="col-span-12 lg:col-span-4 experience-card bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm w-full md:w-1/3">
-                <div className="flex mb-2 flex-col w-full md:w-1/3">
-                  <p className="text-[#498d8d] text-lg uppercase mb-2 font-bold">
-                    Architecture
-                  </p>
-                  <h3 className="font-bold w-[300px]">My Philosophy</h3>
-                </div>
-
-                <div className=" gap-3">
-                  <p className="text-sm text-zinc-400 leading-relaxed">
-                    I believe in clean code that's easy to read and systems that
-                    are built to scale. Aesthetics should never sacrifice
-                    performance.
-                  </p>
-                </div>
+            <div className="col-span-12 lg:col-span-4 experience-card bg-white dark:bg-zinc-900/90 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm w-full md:w-1/3">
+              <div className="flex mb-2 flex-col w-full md:w-1/3">
+                <p className="text-[#498d8d] text-lg uppercase mb-2 font-bold">
+                  Architecture
+                </p>
+                <h3 className="font-bold w-[300px]">My Philosophy</h3>
               </div>
+
+              <div className=" gap-3">
+                
+                <p className="text-sm text-zinc-400 leading-relaxed">
+                  I believe in clean code that's easy to read and systems that
+                  are built to scale. Aesthetics should never sacrifice
+                  performance.
+                </p>
+              </div>
+          </div>
 
               <div className="w-full md:w-2/3 relative rounded-2xl overflow-hidden h-[180px] sm:h-[220px]">
                 <img
