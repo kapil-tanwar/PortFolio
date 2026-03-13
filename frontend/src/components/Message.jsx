@@ -30,7 +30,7 @@ function Message({
             {link1 && link1.startsWith("/") ? (
               <NavLink to={link1}>
                 <button
-                  className="
+                  className="cursor-pointer
                   group relative overflow-hidden
                   bg-[#498d8d] text-white
                   px-5 sm:px-6 py-3 sm:py-4
@@ -49,7 +49,7 @@ function Message({
             ) : (
               <a href={link1}>
                 <button
-                className="
+                className="cursor-pointer
                   group relative overflow-hidden
                   bg-[#498d8d] text-white
                    sm:px-6 py-3 sm:py-4
@@ -71,7 +71,7 @@ function Message({
             {link2 && link2.startsWith("/") && !download ? (
               <NavLink to={link2}>
                 <button
-                  className="
+                  className="cursor-pointer
                   group relative overflow-hidden
                   bg-[#498d8d] text-white
                   px-5 sm:px-6 py-3 sm:py-4
@@ -94,7 +94,7 @@ function Message({
             ) : (
               <a href={link2} target={download ? "_blank" : "_self"}>
                 <button
-                className="
+                className="cursor-pointer
                   group relative overflow-hidden
                   bg-[#498d8d] text-white
                   px-5 sm:px-6 py-3 sm:py-4
