@@ -56,7 +56,7 @@ const About = () => {
                   </h2>
                   <div className="space-y-6 text-[#131616] dark:text-gray-300 leading-relaxed text-lg">
                     <p>
-                      I am a Full Stack Developer with a passion for building
+                      I am a Software Developer with a passion for building
                       robust, scalable applications that solve real-world
                       problems. My journey began with a curiosity for how the
                       internet works, which evolved into a professional career
