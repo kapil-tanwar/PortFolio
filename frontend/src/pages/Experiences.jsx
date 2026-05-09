@@ -25,8 +25,8 @@ const Experiences = () => {
         <Navbar />
         <main className="flex-1 max-w-[1200px] mx-auto w-full px-4 md:px-10 py-12">
           <div className="mb-16">
-              <div className="flex flex-col gap-4">
-                <div
+            <div className="flex flex-col gap-4">
+              <div
                 className="inline-flex items-center gap-2 
                 bg-[#498d8d]/10 text-[#498d8d]
                 px-3 py-1 rounded-full text-xs font-bold mb-3 w-fit"
@@ -34,7 +34,8 @@ const Experiences = () => {
                 ● EXPERIENCE
               </div>
               <h1 className="text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] text-[#131616] dark:text-white">
-                Professional <span className="text-primary text-[#498d8d]">Experience</span>
+                Professional{" "}
+                <span className="text-primary text-[#498d8d]">Experience</span>
               </h1>
               <p className="text-[#6e7c7c] dark:text-gray-400 text-lg max-w-2xl">
                 A decade of building scalable web architectures, leading
@@ -63,6 +64,16 @@ const Experiences = () => {
 
                     <a
                       className="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                      href="#2026"
+                    >
+                      <span className="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                        school
+                      </span>
+                      <span className="text-sm font-medium">2026</span>
+                    </a>
+
+                    <a
+                      className="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                       href="#2025"
                     >
                       <span className="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">
@@ -84,6 +95,83 @@ const Experiences = () => {
             </aside>
 
             <div className="flex flex-col gap-12">
+              <section
+                className="relative pl-8 border-l-2 border-gray-200 dark:border-gray-800 mb-12"
+                id={2026}
+              >
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#498d8d]/29 dark:bg-gray-700 border-4 border-[#498d8d] dark:border-background-dark" />
+                <div className="experience-card bg-[#498d8d]/29 dark:bg-zinc-900/90  p-8 rounded-xl border border-gray-200 dark:border-gray-800 transition-all duration-300">
+                  <div className="flex flex-wrap justify-between  gap-4 mb-6">
+                    <div>
+                      <h3 className="text-xl font-bold text-[#131616] dark:text-white flex items-center">
+                        <h2 className="text-[16.5px] md:text-xl mr-2">
+                          Backend Development Intern |{" "}
+                        </h2>
+                        <a
+                          href="#"
+                          className="md:text-[14px] text-[14px] underline text-[#5d9f9f] dark:text-[#6dd0d0] mt-1"
+                        >
+                          Link
+                        </a>
+                      </h3>
+                      <p className="text-[#6e7c7c] dark:text-gray-400 font-semibold text-base text-[16px] md:text-18px">
+                        Syntecxhub
+                      </p>
+                    </div>
+                    <span className="px-4 py-1.5 bg-gray-100 dark:bg-gray-800 text-[#6e7c7c] dark:text-gray-400 text-sm font-medium rounded-full border border-gray-200 dark:border-gray-700 flex justify-center items-center">
+                      Mar 2026 - Apr 2026
+                    </span>
+                  </div>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex gap-3 text-[#131616] dark:text-gray-300 leading-relaxed">
+                      <span className="material-symbols-outlined text-primary mt-1 flex-shrink-0">
+                        check_circle
+                      </span>
+                      <span>
+                        Developed and deployed 10+ scalable RESTful APIs using
+                        Node.js, improving backend processing efficiency and
+                        enabling smooth high-throughput data handling.
+                      </span>
+                    </li>
+                    <li className="flex gap-3 text-[#131616] dark:text-gray-300 leading-relaxed">
+                      <span className="material-symbols-outlined text-primary mt-1 flex-shrink-0">
+                        check_circle
+                      </span>
+                      <span>
+                        Optimized 5+ database schemas and complex query
+                        operations, reducing response latency by 25% while
+                        maintaining data consistency in concurrent environments.
+                      </span>
+                    </li>
+                    <li className="flex gap-3 text-[#131616] dark:text-gray-300 leading-relaxed">
+                      <span className="material-symbols-outlined text-primary mt-1 flex-shrink-0">
+                        check_circle
+                      </span>
+                      <span>
+                        Collaborated with cross-functional teams to implement
+                        backend solutions, troubleshoot integration issues, and
+                        ensure reliable communication between frontend and
+                        database systems.
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded text-xs font-medium text-[#6e7c7c] dark:text-gray-400">
+                      React
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded text-xs font-medium text-[#6e7c7c] dark:text-gray-400">
+                      Next.js
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded text-xs font-medium text-[#6e7c7c] dark:text-gray-400">
+                      MongoDB
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded text-xs font-medium text-[#6e7c7c] dark:text-gray-400">
+                      Express.js
+                    </span>
+                  </div>
+                </div>
+              </section>
+
               <section
                 className="relative pl-8 border-l-2 border-gray-200 dark:border-gray-800 mb-12"
                 id={2025}
