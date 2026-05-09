@@ -7,25 +7,19 @@ import rateLimit from "express-rate-limit";
 dotenv.config();
 const app = express();
 
-
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://port-folio-mqvn.vercel.app",
-    ],
+    origin: ["http://localhost:5173", "https://port-folio-mqvn.vercel.app"],
     methods: ["GET", "POST"],
-  })
+  }),
 );
-
-
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const contactLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 5,
+  max: 2,
   message: {
     error: "Too many requests. Please try again after 15 minutes.",
   },
@@ -37,7 +31,7 @@ app.get("/", (req, res) => {
   res.send("Backend running");
 });
 
-app.post("/api/contact", async (req, res) => {
+app.post("/api/contact", contactLimiter, async (req, res) => {
   const { firstName, lastName, phoneNO, email, subject, message } = req.body;
 
   if (!firstName || !lastName || !phoneNO || !email || !message) {
@@ -79,10 +73,8 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
