@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { Resend } from "resend";
-import rateLimit from "express-rate-limit";
 
 dotenv.config();
 const app = express();
@@ -17,21 +16,11 @@ app.use(
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const contactLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 2,
-  message: {
-    error: "Too many requests. Please try again after 15 minutes.",
-  },
-  standardHeaders: true,
-  legacyHeaders: false,
-});
-
 app.get("/", (req, res) => {
   res.send("Backend running");
 });
 
-app.post("/api/contact", contactLimiter, async (req, res) => {
+app.post("/api/contact", async (req, res) => {
   const { firstName, lastName, phoneNO, email, subject, message } = req.body;
 
   if (!firstName || !lastName || !phoneNO || !email || !message) {
